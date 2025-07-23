@@ -164,7 +164,8 @@ add_action('wp_enqueue_scripts', 'venue_theme_scripts');
 // include_once 'inc/template-function.php';
 
 // include_once 'inc/widget.php';
-// include_once 'inc/venue-kirki.php';
-// if (class_exists('Kirki')) {
-//     include_once get_template_directory() . '/inc/venue-kirki.php';
-// }
+include_once 'inc/venue-kirki.php';
+
+if (class_exists('Kirki')) {
+    include_once get_template_directory() . '/inc/venue-kirki.php';
+}
