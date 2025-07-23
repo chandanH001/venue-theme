@@ -75,6 +75,7 @@ window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\
 <script src="js/datepicker.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+<?php wp_footer(); ?>
 </body>
 
 </html>
