@@ -45,7 +45,8 @@ if (! function_exists('venue_setup')):
 
 // This theme uses wp_nav_menu() in two locations.
         register_nav_menus([
-            'primary' => __('Primary Menu', 'venue'),
+            'header' => __('Header Menu', 'venue'),
+            'footer' => __('Footer Menu', 'venue'),
             // 'social'  => __('Social Links Menu', 'venue'),
         ]);
 
@@ -161,10 +162,11 @@ add_action('wp_enqueue_scripts', 'venue_theme_scripts');
 
 // Include breadcrumb functionality for the theme.
 // include_once 'inc/beadcrumb.php';
-// include_once 'inc/template-function.php';
+include_once 'inc/template-function.php';
 
 // include_once 'inc/widget.php';
 include_once 'inc/venue-kirki.php';
+include_once 'inc/nav-walker.php';
 
 if (class_exists('Kirki')) {
     include_once get_template_directory() . '/inc/venue-kirki.php';
