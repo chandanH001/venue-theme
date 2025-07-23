@@ -11,17 +11,6 @@
 
     <?php wp_head(); ?>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/fontAwesome.css">
-    <link rel="stylesheet" href="css/hero-slider.css">
-    <link rel="stylesheet" href="css/owl-carousel.css">
-    <link rel="stylesheet" href="css/datepicker.css">
-    <link rel="stylesheet" href="css/templatemo-style.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <!--
 	Venue Template
 	http://www.templatemo.com/tm-522-venue
