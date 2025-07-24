@@ -1,11 +1,13 @@
-<?php get_template_part('template-parts/footer/footer-1'); ?>
+<?php get_template_part('template-parts/footer/footer-1');
+    $copyright = get_theme_mod('footer_copyright', 'default');
+
+?>
+
+
 
 <div class="sub-footer">
-    <p>Copyright &copy; 2018 Company Name
-
-        - Design: <a rel="nofollow" href="http://www.templatemo.com">Template Mo</a></p>
+    <p><?php echo __($copyright); ?></p>
 </div>
-
 <?php wp_footer(); ?>
 </body>
 

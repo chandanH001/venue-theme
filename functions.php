@@ -111,15 +111,7 @@ function venue_widgets_init()
         'before_title'  => '<h3 class="tp-footer-widget-title">',
         'after_title'   => '</h3>',
     ]);
-    register_sidebar([
-        'name'          => __('Footer 4', 'venue'),
-        'id'            => 'venue-footer4-widgets',
-        'description'   => __('Widgets in this area will be shown under your single posts, before comments.', 'venue'),
-        'before_widget' => '<div id="%1$s" class="tp-footer-widget tp-footer-col-4 mb-30 %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h3 class="tp-footer-widget-title">',
-        'after_title'   => '</h3>',
-    ]);
+
 }
 add_action('widgets_init', 'venue_widgets_init');
 
@@ -137,7 +129,7 @@ function venue_theme_scripts()
 
     //style css
     // wp_enqueue_style('style', get_stylesheet_uri());
-    // For emaidate apply css
+    // For emedite apply css
     wp_enqueue_style(
         'style',
         get_stylesheet_uri(),
