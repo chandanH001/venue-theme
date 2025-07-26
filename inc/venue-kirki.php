@@ -22,19 +22,6 @@ new \Kirki\Section(
 );
 
 //Right Header Switcher
-new \Kirki\Field\Checkbox_Switch(
-    [
-        'settings'    => 'venue_right_header_switch',
-        'label'       => esc_html__('Header Right Switch', 'venue'),
-        'description' => esc_html__('Enable Or Disable Header Right', 'venue'),
-        'section'     => 'venue_header',
-        'default'     => 'off',
-        'choices'     => [
-            'on'  => esc_html__('Enable', 'venue'),
-            'off' => esc_html__('Disable', 'venue'),
-        ],
-    ]
-);
 
 new \Kirki\Field\Upload(
     [

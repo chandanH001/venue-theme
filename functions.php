@@ -97,10 +97,11 @@ function venue_widgets_init()
         'name'          => __('Footer 2', 'venue'),
         'id'            => 'venue-footer2-widgets',
         'description'   => __('Widgets in this area will be shown under your single posts, before comments.', 'venue'),
-        'before_widget' => '<div id="%1$s" class="tp-footer-widget tp-footer-col-2 mb-30 %2$s">',
+        'before_widget' => '<div id="%1$s" class="footer-heading %2$s">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h3 class="tp-footer-widget-title">',
-        'after_title'   => '</h3>',
+        'before_title'  => '<h4 class="">',
+        'after_title'   => '</h4>',
+        'link_before'   => '<i class="fa fa-stop"></i> ',
     ]);
     register_sidebar([
         'name'          => __('Footer 3', 'venue'),
@@ -156,8 +157,7 @@ add_action('wp_enqueue_scripts', 'venue_theme_scripts');
 // include_once 'inc/beadcrumb.php';
 include_once 'inc/template-function.php';
 
-// include_once 'inc/widget.php';
-include_once 'inc/venue-kirki.php';
+include_once 'inc/widget.php';
 include_once 'inc/nav-walker.php';
 
 if (class_exists('Kirki')) {
