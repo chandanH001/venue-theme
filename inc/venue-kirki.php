@@ -21,7 +21,7 @@ new \Kirki\Section(
     ]
 );
 
-//Right Header Switcher
+// Right Header Switcher
 
 new \Kirki\Field\Upload(
     [
@@ -34,7 +34,7 @@ new \Kirki\Field\Upload(
     ]
 );
 
-//footer
+// Footer
 new \Kirki\Section(
     'venue_footer',
     [
@@ -42,17 +42,6 @@ new \Kirki\Section(
         'description' => esc_html__('My Footer Description.', 'venue'),
         'panel'       => 'venue_options',
         'priority'    => 160,
-    ]
-);
-
-new \Kirki\Field\Upload(
-    [
-        'settings'    => 'footer_logo_upload',
-        'label'       => esc_html__('Upload Logo For Footer', 'venue'),
-        'description' => esc_html__('The saved value will the URL.', 'venue'),
-        'section'     => 'venue_footer',
-        'default'     => get_template_directory_uri() . '/assets/img/footer_logo.png',
-
     ]
 );
 // Copyright Text
